@@ -1,0 +1,156 @@
+.hidden {
+  display: none;
+}
+
+body {
+  font-family: "Space Grotesk", sans-serif;
+  line-height: 1.4;
+  font-size: 20px;
+  color: #000000;
+  scrollbar-gutter: stable;
+}
+html {
+  scrollbar-gutter: stable;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: currentColor;
+  display: block;
+}
+
+button {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 360px;
+  margin: 0 auto;
+  padding: 0px 20px;
+}
+
+.pair-input {
+  display: block;
+  border: none;
+  border-bottom: #000000 1px solid;
+  outline: none;
+  width: 100%;
+}
+.input-label {
+  display: block;
+  margin: 0 auto;
+  font-size: 16px;
+}
+
+.input-form {
+  display: block;
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+.title {
+  margin-bottom: 20px;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  flex-direction: column-reverse;
+  gap: 40px;
+}
+
+.pairs-list {
+  width: 100%;
+}
+
+.list-label {
+  display: block;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.pairs-list li {
+  cursor: pointer;
+  padding: 5px;
+  width: 100%;
+  border-top: 1px solid black;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.pairs-list li:hover {
+  background-color: #f0f0f0;
+}
+
+.pairs-list li:first-child {
+  border-top: none;
+}
+
+.pairs-list li.selected {
+  background-color: #969696;
+}
+
+.action-btn {
+  border: none;
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.action-btn:hover {
+  background-color: #969696;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.xml-block {
+  width: 100%;
+  border: #000000 1px solid;
+  padding: 5px;
+  overflow-x: auto;
+}
+
+@media screen and (min-width: 900px) {
+  .container {
+    max-width: 1440px;
+  }
+  .form-section {
+    width: 100%;
+  }
+  .main-content {
+    flex-direction: row;
+  }
+  .action-btn {
+    width: 200px;
+  }
+}

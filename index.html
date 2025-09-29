@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>SD Solutions test</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script src="./js/main.js" defer type="module"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h2 class="title">Test</h2>
+      <div class="main-content">
+        <div class="form-section">
+          <form id="input-form" class="input-form">
+            <label for="pair-input" class="input-label">Name/Value Pair</label>
+            <input
+              id="pair-input"
+              type="text"
+              placeholder="Name=Value"
+              class="pair-input"
+            />
+            <span id="input-error" class="hidden error-message"></span>
+          </form>
+
+          <span class="list-label">Name/Value Pair List</span>
+          <ul id="pairs-list" class="pairs-list"></ul>
+          <div id="xml-block" class="hidden xml-block"></div>
+        </div>
+        <div class="button-section">
+          <button id="add-btn" class="action-btn add-btn">Add</button>
+          <button id="sort-name-btn" class="action-btn sort-name-btn">
+            Sort by Name
+          </button>
+          <button id="sort-value-btn" class="action-btn sort-value-btn">
+            Sort by Value
+          </button>
+          <button id="delete-btn" class="action-btn delete-btn">Delete</button>
+          <button id="show-xml-btn" class="action-btn show-xml-btn">
+            Show XML
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
